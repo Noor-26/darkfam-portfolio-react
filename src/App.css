@@ -6,7 +6,6 @@
 .n-h1{
   font-family: 'Satisfy', cursive;
   font-weight:600;
-  font-size:30px;
 }
 @media (max-width:450px) {
   .n-h1{
