@@ -3,8 +3,10 @@ import './About.css'
 
 function About() {
   return (
-    <div>
-            <div>
+    <div  data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000">
+            <div >
             <h5 className="mt-3 pt-3 text">About</h5>
             <h2 id="About" className='pt-1' >Personal Info</h2>
             <h5 className='pt-2'>Get to know more about me</h5>
@@ -27,7 +29,7 @@ function About() {
         <p class="skil">Bootstrap</p>
         <p class="skil">tailwind</p>
         <p class="skil">Nodejs</p>
-        <p class="skil">MongoDb</p>
+        <p class="skil">MongoDB</p>
         </div>
         </div>
       </div>
