@@ -1,5 +1,7 @@
 import React from 'react'
 import './Banner.css'
+import Typewriter from 'typewriter-effect';
+
 function Banner() {
     return (
         <div className="main " >
@@ -8,7 +10,12 @@ function Banner() {
                 <div className="row row-cols-1  row-cols-md-2 w-100 ">
                     <div className="main-txt col" >
                         <h5 className="main-txt-h3 text-start greet ">Hello there!</h5>
-                        <h1 className="text-start m-h1 font">I am Mahtab</h1>
+                        <h1 className="text-start m-h1 font"><Typewriter  options={{
+    autoStart:true,
+    loop:true,
+    delay:40,
+    strings:["I am Mahtab","I am Darkfam"]
+}}/></h1>
                         <h2 className="text-start font">I am a frontend web developer</h2>
 
                     </div>
