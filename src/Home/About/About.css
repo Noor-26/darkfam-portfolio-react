@@ -1,0 +1,19 @@
+.text{
+    color:crimson;
+}
+.text-justify{
+text-align: justify;
+}
+.skil{
+background-color: lightgray;
+width: fit-content;
+padding: 5px 20px;
+color: black;
+
+}
+.skils{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+
+}

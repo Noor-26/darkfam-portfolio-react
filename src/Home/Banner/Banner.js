@@ -1,8 +1,9 @@
 import React from 'react'
 import './Banner.css'
 import Typewriter from 'typewriter-effect';
-
 function Banner() {
+    const projectPage = () => window.location.href = "#Project"
+    const aboutPage = () => window.location.href = "#About"
     return (
         <div className="main " >
             <img src="images/background.png" alt=" background img" className="img-fluid bg-img" />
@@ -24,9 +25,9 @@ function Banner() {
                     <div className="col" >
                         <div>
 
-                            <button className="button my-3" >Latest Projects</button>
+                            <button className="button my-3" onClick={projectPage}>Latest Projects</button>
                         </div>
-                        <button className="button" >More about me</button>
+                        <button className="button" onClick={aboutPage}>More about me</button>
                     </div>
 
                 </div>
