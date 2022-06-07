@@ -5,9 +5,9 @@ function Banner() {
     const projectPage = () => window.location.href = "#Project"
     const aboutPage = () => window.location.href = "#About"
     return (
-        <div className="main " >
+        <div className="main "  id='home'>
             <img src="images/background.png" alt=" background img" className="img-fluid bg-img" />
-            <div className=" ms-4 ms-md-5 h-100 d-flex align-items-center " id="main-content">
+            <div className=" ms-4 ms-md-5 main d-flex align-items-center " id="main-content">
                 <div className="row row-cols-1  row-cols-md-2 w-100 ">
                     <div className="main-txt col" >
                         <h5 className="main-txt-h3 text-start greet ">Hello there!</h5>

@@ -5,10 +5,10 @@ function About() {
     return (
         <div data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            data-aos-duration="1000">
+            data-aos-duration="1000" id="About" >
             <div >
                 <h5 className="mt-3 pt-3 text">About</h5>
-                <h2 id="About" className='pt-1' >Personal Info</h2>
+                <h2 className='pt-1' >Personal Info</h2>
                 <h5 className='pt-2'>Get to know more about me</h5>
             </div>
             <div className="row mx-auto row-cols-1 row-cols-md-2 container my-5" >
