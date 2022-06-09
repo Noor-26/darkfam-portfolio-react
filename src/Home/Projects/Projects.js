@@ -4,7 +4,7 @@ import './Projects.css'
 function Projects() {
     const [projects, setprojects] = useState([])
     useEffect(() => {
-  fetch('http://localhost:5000/projects')
+  fetch('https://salty-chamber-85536.herokuapp.com/projects')
   .then(res => res.json())
   .then(data => setprojects(data))
     }, [])
