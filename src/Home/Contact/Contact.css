@@ -1,0 +1,18 @@
+.form_control{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(116, 116, 116);
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+.form_control:focus {
+    border-bottom-color: crimson;
+  }
+  .form_control::placeholder{
+    text-transform: uppercase;
+  }

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Button from 'react-bootstrap/esm/Button';
+import ProjectModal from './ProjectModal'
 
 function ProjectCard({project}) {
     const {img,name,description,visit,code} = project
+    const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
             <div className="row row-cols-1 container mx-auto row-cols-md-2  my-5"   data-aos="fade-up-right"  data-aos-duration="1000">
@@ -17,12 +20,25 @@ function ProjectCard({project}) {
             <p className="card-text text-center text-muted">{description}</p>
             <div className="w-100 text-center">
               <button className="project-button"><a target="_blank" href={visit} className="s-a">Visit site</a></button>
-              <button className="ms-2 project-button"><a  target="_blank" href={code} className="s-a">See code</a></button>
+            
+             
+
+              <>
+      <Button className="project-button ms-2 " variant="dark" onClick={() => setModalShow(true)}>
+        see details 
+      </Button>
+
+      <ProjectModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
             </div>
           </div>
         </div>
       </div>
         </div>
+        
         </div>
   )
 }

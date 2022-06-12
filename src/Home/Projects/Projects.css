@@ -11,7 +11,7 @@
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #17C3B2;
+    color: white;
    }
    
    .project-button::before {
@@ -36,7 +36,10 @@
    .project-button:hover::before {
     width: 105%;
    }
-   
+   .project-button:hover {
+    color: black;
+    font-weight: bold;
+   }
    .project-button:hover .s-a {
     color: black;
    }
